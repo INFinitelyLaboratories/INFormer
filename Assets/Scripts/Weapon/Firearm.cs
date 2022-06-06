@@ -130,7 +130,7 @@ public class Firearm : Weapon
         {
             StartCoroutine(_Reload());
 
-            m_animator.Play("Reload", 0, 0f);
+            m_animator.CrossFade("Reload", 0.4f , 0, 0f);
         }
     }
 
